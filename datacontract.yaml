@@ -1,19 +1,19 @@
 dataContractSpecification: 0.9.3
-id: urn:datacontract:fulfillment:stock-last-sales
+id: urn:datacontract:governance-group:stock-last-sales
 info:
   title: Last Sales
   version: 1.0.0
   description: |
     The data model contains all articles that are in stock.
     For every article the last sale timestamp is defined.
-  owner: fulfillment
+  owner: governance-group
   contact:
-    name: John Doe (Data Product Owner)
+    name: Badrish Davay (Data Product Owner)
 #    url: https://teams.microsoft.com/l/channel/19%3Ad7X0bzOrUrZ-QAGu0nTxlWACe5HOQ-8Joql71A_00000%40thread.tacv2/General?groupId=4d213734-d5a1-4130-8024-00000000&tenantId=b000e7de-5c4d-41a2-9e67-00000000
 servers:
   development:
     type: databricks
-    host: dbc-5829e67d-6e9e.cloud.databricks.com
+    host: dbc-cbfcb047-4176.cloud.databricks.com
     catalog: acme
     schema: stock_last_sales
 terms:
