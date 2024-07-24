@@ -8,7 +8,7 @@ info:
     For every article the last sale timestamp is defined.
   owner: governance-group
   contact:
-    name: Badrish Davay (Data Product Owner)
+    name: Beverlu Shih (Data Product Owner)
 #    url: https://teams.microsoft.com/l/channel/19%3Ad7X0bzOrUrZ-QAGu0nTxlWACe5HOQ-8Joql71A_00000%40thread.tacv2/General?groupId=4d213734-d5a1-4130-8024-00000000&tenantId=b000e7de-5c4d-41a2-9e67-00000000
 servers:
   development:
