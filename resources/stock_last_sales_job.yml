@@ -11,7 +11,7 @@ resources:
 
       email_notifications:
         on_failure:
-          - badrish.davay@thoughtworks.com
+          - beverly.shih@thoughtworks.com
 
       tasks:
         - task_key: create_unity_catalog_table
