@@ -35,9 +35,5 @@ databricks bundle run stock_last_sales_job
 
 For that, we can use the Data Contract CLI tool to make this check:
 
-```
-export DATACONTRACT_DATABRICKS_HTTP_PATH=/sql/1.0/warehouses/....
-export DATACONTRACT_DATABRICKS_TOKEN=....
-datacontract test datacontract.yaml
-```
+
 
