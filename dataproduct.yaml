@@ -19,5 +19,5 @@ outputPorts:
     type: databricks
     server:
       host: dbc-cbfcb047-4176.cloud.databricks.com
-      catalog: acme2
+      catalog: acme
       schema: stock_last_sales

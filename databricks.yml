@@ -33,7 +33,7 @@ targets:
     workspace:
       host: https://dbc-cbfcb047-4176.cloud.databricks.com
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
-      root_path: /Users/beverly.shih@thoughtworks.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Users/badrish.davay@thoughtworks.com/.bundle/${bundle.name}/${bundle.target}
     run_as:
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
-      user_name: beverly.shihs@thoughtworks.com
+      user_name: badrish.davay@thoughtworks.com

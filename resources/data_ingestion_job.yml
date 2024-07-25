@@ -11,7 +11,7 @@ resources:
 
       email_notifications:
         on_failure:
-          - beverly.shih@thoughtworks.com
+          - badrish.davay@thoughtworks.com
 
       tasks:
         - task_key: data_ingestion

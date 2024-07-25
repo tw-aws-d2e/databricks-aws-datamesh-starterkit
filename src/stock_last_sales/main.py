@@ -3,11 +3,11 @@ from pyspark.sql.functions import max
 
 
 def get_sales(spark: SparkSession) -> DataFrame:
-    return spark.read.table("acme2.stock_last_sales.input_sales")
+    return spark.read.table("acme.stock_last_sales.input_sales")
 
 
 def get_current_stock(spark: SparkSession) -> DataFrame:
-    return spark.read.table("acme2.stock_last_sales.input_stock")
+    return spark.read.table("acme.stock_last_sales.input_stock")
 
 
 def write_to_table(spark: SparkSession, df: DataFrame, table_name: str):
@@ -46,7 +46,7 @@ def main():
 
     stock_last_sales_sdf = calculate_last_sales(spark, current_stock_df, sales_df)
 
-    write_to_table(spark, stock_last_sales_sdf,"acme2.stock_last_sales.articles")
+    write_to_table(spark, stock_last_sales_sdf,"acme.stock_last_sales.articles")
 
 
 if __name__ == '__main__':
