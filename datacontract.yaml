@@ -8,13 +8,13 @@ info:
     For every article the last sale timestamp is defined.
   owner: governance-group
   contact:
-    name: Badrish Davay (Data Product Owner)
+    name: Beverlu Shih (Data Product Owner)
 #    url: https://teams.microsoft.com/l/channel/19%3Ad7X0bzOrUrZ-QAGu0nTxlWACe5HOQ-8Joql71A_00000%40thread.tacv2/General?groupId=4d213734-d5a1-4130-8024-00000000&tenantId=b000e7de-5c4d-41a2-9e67-00000000
 servers:
   development:
     type: databricks
     host: dbc-cbfcb047-4176.cloud.databricks.com
-    catalog: acme
+    catalog: acme2
     schema: stock_last_sales
 terms:
   usage: >
@@ -35,9 +35,9 @@ models:
         primary: true
         unique: true
         required: true
-        pattern: ^[A-Za-z0-9]{8,14}$
+        pattern: ^[A-Za-z0-9]{8,15}$
         minLength: 8
-        maxLength: 14
+        maxLength: 15
         example: "96385074"
       quantity:
         description: The total amount of articles that are currently in stock in all warehouses.

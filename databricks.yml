@@ -32,10 +32,8 @@ targets:
     mode: production
     workspace:
       host: https://dbc-cbfcb047-4176.cloud.databricks.com
-      # We always use /Users/badrish.davay@thoughtworks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
-      root_path: /Users/badrish.davay@thoughtworks.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Users/beverly.shih@thoughtworks.com/.bundle/${bundle.name}/${bundle.target}
     run_as:
-      # This runs as badrish.davay@thoughtworks.com in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
-      user_name: badrish.davay@thoughtworks.com
+      user_name: beverly.shihs@thoughtworks.com
