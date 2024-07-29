@@ -7,10 +7,11 @@ This code is modified from [this article on building a data product with Databri
 
 # Installation and Setup 
 ## Prerequisites:
-In this article, we will use [Data Contracts](https://cli.datacontract.com/) and the new [Databricks Asset Bundles](https://docs.databricks.com/en/dev-tools/bundles/index.html) that are a great fit to implement data products.
+In this article, we will use the new [Databricks Asset Bundles](https://docs.databricks.com/en/dev-tools/bundles/index.html) that are a great fit to implement data products.
 Other tools that will be used:
   - Python 3.10
   - [Databricks CLI](https://docs.databricks.com/en/dev-tools/cli/tutorial.html).
+  - [Data Contracts](https://cli.datacontract.com/)
   - GitHub Actions
 
 To fully run this starter kit, you need permissions for:
