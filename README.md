@@ -35,11 +35,11 @@ pip install -r requirements-dev.txt
   1. On the Data Mesh Manager website, click your username in the top right corner.
   2. Go to the API Keys tab on the left side.
   3. Add API key, give it a descriptive name and copy the key.
-  4. In the CLI type the following commands, hit enter after each one. It will prompt you to add the API key after the `put-secret` command.
+  4. In the CLI type the following commands, hit enter after each one. It will prompt you to add the API key after the `put-secret` command. Secret names are workspace-wide and need to be unique.
 
 ```
-databricks secrets create-scope datamesh_manager
-databricks secrets put-secret datamesh_manager api_key
+databricks secrets create-scope <scope-name>
+databricks secrets put-secret <scope-name> api_key
 ```
 
 ### 3. Replace workspace urls
