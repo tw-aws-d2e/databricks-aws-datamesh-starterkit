@@ -14,6 +14,7 @@ Other tools that will be used:
   - [Databricks CLI](https://docs.databricks.com/en/dev-tools/cli/tutorial.html).
   - [Data Contracts](https://cli.datacontract.com/)
   - GitHub Actions
+  - [Data Mesh Manager](https://datamesh-manager.com/)
 
 To fully run this starter kit, you need permissions for:
   - Creating job clusters, catalogs, and personal access tokens on Databricks workspace
