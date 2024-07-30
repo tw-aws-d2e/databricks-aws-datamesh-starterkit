@@ -18,6 +18,7 @@ Other tools that will be used:
 
 To fully run this starter kit, you need permissions for:
   - Creating job clusters, catalogs, and personal access tokens on Databricks workspace
+  - Organization access in Data Mesh Manager
   - Creating Data Mesh Manager API Key
 
 ## Configuration
