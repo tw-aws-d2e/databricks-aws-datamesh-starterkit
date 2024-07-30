@@ -43,7 +43,8 @@ pip install -r requirements-dev.txt
 databricks secrets create-scope <scope-name>
 databricks secrets put-secret <scope-name> api_key
 ```
-  5. In the second block of `src/publish_datamesh_manager.ipnb`, replace `"datamesh_manager"` with the name of the secret you just created.
+  5. In the second block of `src/publish_datamesh_manager.ipynb`, replace `"datamesh_manager"` with the name of the secret you just created.
+  6. At the very bottom of `resources/stock_last_sales_job.yml` where it sets `DATAMESH_MANAGER_API_KEY`, replace `"datamesh_manager"` with the name of the secret you just created.  
 ### 3. Replace workspace urls
 Replace the host urls and email notification settings with your own workspace url and email in `databricks.yml`, `dataproduct.yml`, and `datacontract.yml`.
 
