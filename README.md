@@ -1,7 +1,6 @@
 # Stock Last Sales
 
-The 'stock_last_sales' project is an example project to show how to implement a data product with 
-Databricks Asset Bundles.
+The 'stock_last_sales' project is an example project to show how to implement a data product with Databricks Asset Bundles. The main job will process the data which is then published to Data Mesh Manager. It also includes implementing CI/CD using GitHub Actions. 
 
 This bundle contains two jobs:
   - data_ingestion_job: simulates an input port
