@@ -3,6 +3,10 @@
 The 'stock_last_sales' project is an example project to show how to implement a data product with 
 Databricks Asset Bundles.
 
+This bundle contains two jobs:
+  - data_ingestion_job: simulates an input port
+  - stock_last_sales_job: creates unity catalog, main process, publish to Data Mesh Manager, and test the Data Contract.
+
 This code is modified from [this article on building a data product with Databricks](https://www.datamesh-architecture.com/howto/build-a-dataproduct-with-databricks).
 
 # Installation and Setup 
@@ -24,7 +28,6 @@ To fully run this starter kit, you need permissions for:
 ## Configuration
 
 ### 1. To set up a local Python environment, we can use venv and install the development dependencies:
-
 ```
 python3.10 -m venv .venv
 source .venv/bin/activate
@@ -41,7 +44,7 @@ pip install -r requirements-dev.txt
 databricks secrets create-scope <scope-name>
 databricks secrets put-secret <scope-name> api_key
 ```
-
+  5. In the second block of `src/publish_datamesh_manager.ipnb`, replace `"datamesh_manager"` with the name of the secret you just created.
 ### 3. Replace workspace urls
 Replace the host urls and email notification settings with your own workspace url and email in `databricks.yml`, `dataproduct.yml`, and `datacontract.yml`.
 
@@ -51,7 +54,13 @@ If you do not have permissions to the catalog listed in `datacontract.yml` under
   - `/src/create_unity_catalog.ipynb`
   - `/src/prepare.ipynb`
   - `/src/stock_last_sales/main.py`
-    
+
+### 5. Run setup script
+To simulate an input port, you will need to run the data ingestion job before running any other job.
+
+```
+databricks bundle run data_ingestion_job
+```
 # Basic Usage
 ### 1. When we are confident, we can deploy the bundle to our Databricks dev instances (manually for now):
 
@@ -61,7 +70,6 @@ databricks bundle deploy
 
 ### 2. And let's trigger a manual run of our workflow:
 ```
-databricks bundle run data_ingestion_job
 databricks bundle run stock_last_sales_job
 ```
 You should see the job appear in your Databricks workspace. When `stock_last_sales_job` is finished, you will be able to see it registered in the Data Mesh Manager.
