@@ -6,6 +6,10 @@ This bundle contains two jobs:
   - data_ingestion_job: simulates an input port
   - stock_last_sales_job: creates unity catalog, main process, publish to Data Mesh Manager, and test the Data Contract.
 
+- root folder contains yml files for Databricks bundle, data contract, and data product information
+- src folder contains python notebooks that are used in the jobs
+- resources folder contains job yml files
+  
 This code is modified from [this article on building a data product with Databricks](https://www.datamesh-architecture.com/howto/build-a-dataproduct-with-databricks).
 
 # Installation and Setup 
