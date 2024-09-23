@@ -3,9 +3,10 @@
 The 'stock_last_sales' project is an example project to show how to implement a data product with Databricks Asset Bundles. The main job will process the data which is then published to Data Mesh Manager. It also includes implementing CI/CD using GitHub Actions. 
 
 This bundle contains two jobs:
-  - data_ingestion_job: simulates an input port
-  - stock_last_sales_job: creates unity catalog, main process, publish to Data Mesh Manager, and test the Data Contract.
+  - `data_ingestion_job`: simulates an input port
+  - `stock_last_sales_job`: creates unity catalog, main process, publish to Data Mesh Manager, and test the Data Contract.
 
+Project structure:
 - root folder contains yml files for Databricks bundle, data contract, and data product information
 - src folder contains python notebooks that are used in the jobs
 - resources folder contains job yml files
